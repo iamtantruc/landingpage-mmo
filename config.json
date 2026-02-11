@@ -1,0 +1,145 @@
+{
+  "brand": {
+    "name": "Winsocial",
+    "slogan": "Hệ thống Seeding #1 Việt Nam",
+    "logo": "/assets/logo.png",
+    "favicon": "/favicon.ico",
+    "primaryColor": "#6C5CE7",
+    "secondaryColor": "#00CEC9"
+  },
+  "seo": {
+    "title": "Winsocial - Dịch vụ Seeding Người Thật, Tăng Uy Tín Thương Hiệu",
+    "description": "Triển khai seeding chất lượng với hệ thống creator thực, báo cáo minh bạch. Tăng trưởng đột phá trong 24h.",
+    "keywords": "seeding, quảng cáo, social media, marketing"
+  },
+  "contact": {
+    "hotline": "0384327608",
+    "zalo": "0384327608",
+    "email": "contact@winsocial.vn",
+    "address": "Hà Nội, Việt Nam"
+  },
+  
+  "banner": {
+    "slides": [
+      {
+        "image": "/assets/banner-1.jpg",
+        "title": "Hệ Thống Seeding Tự Động",
+        "subtitle": "Kết nối với 10,000+ creator chất lượng"
+      },
+      {
+        "image": "/assets/banner-2.jpg",
+        "title": "Triển Khai Trong 24 Giờ",
+        "subtitle": "Nhanh chóng - Hiệu quả - Tối ưu chi phí"
+      },
+      {
+        "image": "/assets/banner-3.jpg",
+        "title": "Báo Cáo Minh Bạch",
+        "subtitle": "Theo dõi realtime, đánh giá chính xác"
+      }
+    ]
+  },
+  
+  "features": {
+    "title": "Tất Cả Trong Một Nền Tảng",
+    "items": [
+      {
+        "icon": "💰",
+        "title": "Giá Cả Hợp Lý",
+        "desc": "Chi phí tối ưu, không phát sinh, nhiều gói linh hoạt"
+      },
+      {
+        "icon": "🕐",
+        "title": "Hỗ Trợ 24/7",
+        "desc": "Đội ngũ hỗ trợ luôn sẵn sàng 24 giờ mỗi ngày"
+      },
+      {
+        "icon": "👥",
+        "title": "Người Dùng Thật",
+        "desc": "100% creator có hồ sơ xác minh, tương tác tự nhiên"
+      },
+      {
+        "icon": "🎨",
+        "title": "Giao Diện Thân Thiện",
+        "desc": "Dashboard trực quan, dễ sử dụng, báo cáo chi tiết"
+      }
+    ]
+  },
+  
+  "whyChoose": {
+    "title": "Vì Sao Chọn Winsocial?",
+    "items": [
+      {
+        "title": "Quy Mô Lớn",
+        "desc": "Mạng lưới hơn 10,000 creator chất lượng trên khắp Việt Nam"
+      },
+      {
+        "title": "Công Nghệ Vượt Trội",
+        "desc": "Hệ thống AI phân tích và tối ưu campaign tự động"
+      },
+      {
+        "title": "Báo Cáo Chi Tiết",
+        "desc": "Dashboard realtime với đầy đủ metrics: reach, engagement, sentiment"
+      },
+      {
+        "title": "Triển Khai Nhanh",
+        "desc": "Từ brief đến launch chỉ trong 24 giờ làm việc"
+      },
+      {
+        "title": "An Toàn Tuyệt Đối",
+        "desc": "Đảm bảo seeding tự nhiên, không vi phạm chính sách nền tảng"
+      },
+      {
+        "title": "Hỗ Trợ Chuyên Nghiệp",
+        "desc": "Account manager 1:1, tư vấn chiến lược miễn phí"
+      }
+    ]
+  },
+  
+  "agencyPricing": {
+    "title": "Bảng Giá Đại Lý",
+    "subtitle": "Đăng ký làm đại lý để nhận ưu đãi đặc biệt",
+    "plans": [
+      {
+        "name": "Đại Lý Cá Nhân",
+        "price": "Liên hệ",
+        "features": [
+          "Chiết khấu 20-30%",
+          "Hỗ trợ tư vấn khách hàng",
+          "Tool marketing miễn phí",
+          "Hỗ trợ 24/7"
+        ],
+        "highlight": false
+      },
+      {
+        "name": "Đại Lý Doanh Nghiệp",
+        "price": "Liên hệ",
+        "features": [
+          "Chiết khấu 30-40%",
+          "API tích hợp hệ thống",
+          "Dashboard riêng cho đại lý",
+          "Đào tạo đội ngũ",
+          "Hỗ trợ priority"
+        ],
+        "highlight": true
+      },
+      {
+        "name": "Đối Tác Chiến Lược",
+        "price": "Liên hệ",
+        "features": [
+          "Chiết khấu 40-50%",
+          "Hợp đồng độc quyền",
+          "Hỗ trợ tài chính marketing",
+          "Tham gia chia sẻ lợi nhuận",
+          "Ưu tiên phát triển tính năng"
+        ],
+        "highlight": false
+      }
+    ]
+  },
+  
+  "cta": {
+    "title": "Sẵn Sàng Tăng Trưởng Cùng Chúng Tôi?",
+    "subtitle": "Liên hệ ngay để được tư vấn chiến lược seeding phù hợp",
+    "buttonText": "Đăng Ký Ngay"
+  }
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi" class="smooth-scroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Winsocial - Hệ thống Seeding #1 Việt Nam</title>
+    <meta name="description" id="metaDescription" content="Dịch vụ seeding người thật, tăng uy tín thương hiệu với công nghệ AI hiện đại. Triển khai trong 24h.">
+    <meta name="keywords" content="seeding, marketing, social media, quảng cáo, người thật">
+    <link rel="icon" id="favicon" href="/assets/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/styles/main.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Particle.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Loading Animation -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+        <p class="loading-text">Đang tải Winsocial...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="container">
+            <a href="#home" class="brand-logo">
+                <div class="logo-icon" id="logoContainer">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="logo-text">
+                    <span id="brandName" class="brand-name gradient-text">Winsocial</span>
+                    <span class="brand-tagline" id="brandSlogan">Hệ thống Seeding #1</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-scroll="home">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+                <a href="#features" class="nav-link" data-scroll="features">
+                    <i class="fas fa-star"></i>
+                    <span>Tính năng</span>
+                </a>
+                <a href="#why-choose" class="nav-link" data-scroll="why-choose">
+                    <i class="fas fa-trophy"></i>
+                    <span>Vì sao chọn</span>
+                </a>
+                <a href="#pricing" class="nav-link" data-scroll="pricing">
+                    <i class="fas fa-tag"></i>
+                    <span>Bảng giá</span>
+                </a>
+                <a href="#contact" class="nav-link" data-scroll="contact">
+                    <i class="fas fa-phone"></i>
+                    <span>Liên hệ</span>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="tel:0384327608" class="btn-call floating">
+                    <i class="fas fa-phone-alt"></i>
+                    <span id="hotlineNumber">0384327608</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Trang chủ</span>
+            </a>
+            <a href="#features" class="mobile-nav-link">
+                <i class="fas fa-star"></i>
+                <span>Tính năng</span>
+            </a>
+            <a href="#why-choose" class="mobile-nav-link">
+                <i class="fas fa-trophy"></i>
+                <span>Vì sao chọn</span>
+            </a>
+            <a href="#pricing" class="mobile-nav-link">
+                <i class="fas fa-tag"></i>
+                <span>Bảng giá</span>
+            </a>
+            <a href="#contact" class="mobile-nav-link">
+                <i class="fas fa-phone"></i>
+                <span>Liên hệ</span>
+            </a>
+            <a href="tel:0384327608" class="mobile-call-btn">
+                <i class="fas fa-phone-alt"></i>
+                Gọi ngay: <span id="mobileHotline">0384327608</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="slider-container" id="sliderContainer">
+                <!-- Slides will be injected by JS -->
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next-btn" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Scroll Down Indicator -->
+            <div class="scroll-down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-badge">TÍNH NĂNG NỔI BẬT</span>
+                    Tất Cả Trong Một Nền Tảng
+                </h2>
+                <p class="section-subtitle">Giải pháp seeding toàn diện với công nghệ hiện đại</p>
+            </div>
+            
+            <div class="features-grid" id="featuresContainer">
+                <!-- Features will be injected by JS -->
+            </div>
+            
+            <!-- Stats Counter -->
+            <div class="stats-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Creator</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Campaign</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">% Hài lòng</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Giờ triển khai</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="why-choose-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-badge">LỢI THẾ CẠNH TRANH</span>
+                    Vì Sao Chọn Winsocial?
+                </h2>
+                <p class="section-subtitle">Khác biệt tạo nên thành công</p>
+            </div>
+            
+            <div class="why-choose-grid" id="whyChooseContainer">
+                <!-- Why choose items will be injected by JS -->
+            </div>
+            
+            <div class="trust-badges" data-aos="fade-up" data-aos-delay="300">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Bảo mật tuyệt đối</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Chứng nhận chất lượng</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-clock"></i>
+                    <span>Hỗ trợ 24/7</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Hoàn tiền 100%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agency Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-badge">CHƯƠNG TRÌNH HỢP TÁC</span>
+                    Bảng Giá Đại Lý
+                </h2>
+                <p class="section-subtitle" id="pricingSubtitle">Đăng ký làm đại lý để nhận ưu đãi đặc biệt</p>
+            </div>
+            
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-tab="monthly">Đại lý cá nhân</button>
+                <button class="pricing-tab" data-tab="yearly">Đại lý doanh nghiệp</button>
+                <button class="pricing-tab" data-tab="enterprise">Đối tác chiến lược</button>
+            </div>
+            
+            <div class="pricing-grid" id="pricingContainer">
+                <!-- Pricing cards will be injected by JS -->
+            </div>
+            
+            <div class="pricing-notice" data-aos="fade-up">
+                <i class="fas fa-info-circle"></i>
+                <p>Ưu đãi đặc biệt khi đăng ký trong tháng này. Liên hệ ngay để được tư vấn chi tiết!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title" id="ctaTitle">Sẵn Sàng Tăng Trưởng Cùng Chúng Tôi?</h2>
+                <p class="cta-subtitle" id="ctaSubtitle">Liên hệ ngay để được tư vấn chiến lược seeding phù hợp với doanh nghiệp của bạn</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary glow-effect">
+                        <i class="fas fa-calendar-check"></i>
+                        <span id="ctaButton">Đăng Ký Ngay</span>
+                    </a>
+                    <a href="tel:0384327608" class="btn-secondary">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Gọi tư vấn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div>
+                            <h3 id="footerBrandName" class="gradient-text">Winsocial</h3>
+                            <p id="footerSlogan" class="footer-tagline">Hệ thống Seeding #1 Việt Nam</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Cung cấp giải pháp seeding chuyên nghiệp với công nghệ AI hiện đại, giúp doanh nghiệp tăng trưởng bền vững.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="footer-title">Liên Hệ Ngay</h4>
+                    <div class="contact-info">
+                        <a href="tel:0384327608" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Hotline</p>
+                                <p id="footerHotline" class="contact-value">0384327608</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://zalo.me/0384327608" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Zalo</p>
+                                <p id="footerZalo" class="contact-value">0384327608</p>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:contact@winsocial.vn" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p id="footerEmail" class="contact-value">contact@winsocial.vn</p>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Địa chỉ</p>
+                                <p id="footerAddress" class="contact-value">Hà Nội, Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter" data-aos="fade-left" data-aos-delay="200">
+                    <h4 class="footer-title">Nhận Ưu Đãi</h4>
+                    <p>Đăng ký nhận báo giá và tư liệu marketing miễn phí</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p class="form-note">Chúng tôi cam kết không spam email của bạn</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © <span id="currentYear">2024</span> <span id="copyrightName">Winsocial</span>. All rights reserved.
+                </p>
+                <div class="footer-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản dịch vụ</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/src/js/configLoader.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                once: false,
+                offset: 100
+            });
+
+            // Init non-config-dependent features first
+            initParticles();
+            initScrollEffects();
+
+            // loadConfig handles everything else:
+            // applyConfig() → applyBrandColors, applySEO, applyContactInfo,
+            //                  applyFeatures, applyWhyChoose, applyPricing,
+            //                  applyCTA, applyFooter, initSlider,
+            //                  initCounters, updateActiveNav
+            loadConfig();
+        });
+    </script>
+</body>
+</html>
