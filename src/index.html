@@ -377,9 +377,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize AOS
             AOS.init({
-                duration: 1000,
+                duration: 500,
                 once: false,
-                offset: 100
+                offset: 0,
+                delay: 0,
+                easing: 'ease-out'
             });
 
             // Init non-config-dependent features first
