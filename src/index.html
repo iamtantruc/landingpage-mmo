@@ -59,6 +59,7 @@
                 <a href="#features" class="nav-link" data-scroll="features">
                     <i class="fas fa-star"></i>
                     <span>Tính năng</span>
+                    <span class="nav-badge">Mới</span>
                 </a>
                 <a href="#why-choose" class="nav-link" data-scroll="why-choose">
                     <i class="fas fa-trophy"></i>
@@ -75,8 +76,11 @@
             </div>
             
             <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Chuyển đổi giao diện">
+                    <i class="fas fa-moon"></i>
+                </button>
                 <a href="#" class="btn-call floating">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-bolt"></i>
                     <span id="hotlineNumber">Đăng ký ngay</span>
                 </a>
                 <button class="menu-toggle" id="menuToggle">
@@ -145,6 +149,13 @@
                     <span class="arrow"></span>
                     <span class="arrow"></span>
                 </div>
+            </div>
+
+            <!-- Floating Abstract Shapes -->
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
         </div>
     </section>
@@ -367,6 +378,20 @@
         <button class="back-to-top" id="backToTop">
             <i class="fas fa-chevron-up"></i>
         </button>
+
+        <!-- Notification Toast -->
+        <div id="notificationToast" class="notification-toast">
+            <div class="toast-content">
+                <div class="toast-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="toast-text">
+                    <p class="toast-title">Thành công!</p>
+                    <p id="toastMessage" class="toast-desc">Chào mừng bạn đến với Winsocial.</p>
+                </div>
+            </div>
+            <button class="toast-close" id="closeToast">&times;</button>
+        </div>
     </footer>
 
     <!-- Scripts -->

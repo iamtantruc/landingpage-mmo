@@ -603,6 +603,31 @@ function initScrollEffects() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const body = document.body;
+
+    // Check saved theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle?.addEventListener('click', () => {
+        const currentTheme = root.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+            root.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+            root.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+    });
+
     // Mobile menu toggle
     const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -627,9 +652,52 @@ function initScrollEffects() {
         const input = newsletterForm.querySelector('input[type="email"]');
         if (input && input.value) {
             input.value = '';
-            alert('Đăng ký thành công! Chúng tôi sẽ liên hệ bạn sớm.');
+            showToast('Đăng ký thành công! Chúng tôi sẽ liên hệ bạn sớm.', 'Cảm ơn!');
         }
     });
+
+    // Toast Close
+    const closeToast = document.getElementById('closeToast');
+    const toast = document.getElementById('notificationToast');
+    closeToast?.addEventListener('click', () => {
+        toast?.classList.remove('active');
+    });
+
+    // Initialize randomized toasts
+    initRandomToasts();
+}
+
+function showToast(message, title = 'Thông báo') {
+    const toast = document.getElementById('notificationToast');
+    const messageEl = document.getElementById('toastMessage');
+    const titleEl = toast?.querySelector('.toast-title');
+
+    if (toast && messageEl) {
+        if (titleEl) titleEl.textContent = title;
+        messageEl.textContent = message;
+        toast.classList.add('active');
+
+        setTimeout(() => {
+            toast.classList.remove('active');
+        }, 5000);
+    }
+}
+
+function initRandomToasts() {
+    const messages = [
+        'Một khách hàng vừa đăng ký gói Đại lý cá nhân.',
+        'Hệ thống vừa hoàn thành 1,500 seeding cho một chiến dịch.',
+        'Đã có 10,240 Creator đang hoạt động hôm nay.',
+        'Chiến dịch Marketing của bạn đã sẵn sàng tăng trưởng.',
+        'Người dùng mới vừa nạp tiền vào hệ thống.'
+    ];
+
+    setInterval(() => {
+        if (Math.random() > 0.7) { // 30% chance every 20 seconds
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            showToast(randomMsg, 'Hoạt động gần đây');
+        }
+    }, 20000);
 }
 
 // Initialize particles
